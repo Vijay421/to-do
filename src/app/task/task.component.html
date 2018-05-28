@@ -1,0 +1,8 @@
+<ul class="tasks-container">
+	<li draggable="true" class="task" *ngFor="let task of tasks" (click)="test(task.id)">
+		<header class="task__header" >
+			{{task.name}} #{{task.id}}
+		</header>
+		<section class="task__discription">{{task.discription}}</section>
+	</li>
+</ul>

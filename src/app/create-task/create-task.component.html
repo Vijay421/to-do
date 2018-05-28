@@ -1,0 +1,9 @@
+<!-- <div *ngIf="task"> -->
+<div class="form-container">
+	<div class="form">
+		<input class="form__input" id="name" [(ngModel)]="name" placeholder="name"/>
+		<textarea class="form__input" id="discription" [(ngModel)]="discription" placeholder="discription"></textarea>
+		<button (click)="createTask()" >create task</button>
+	</div>
+</div>
+<app-task></app-task>
